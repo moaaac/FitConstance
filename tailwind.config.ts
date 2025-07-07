@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,31 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Cores do ícone
+				'vita-blue': {
+					50: '#e6f2ff',
+					100: '#b3d9ff',
+					200: '#80c0ff',
+					300: '#4da6ff',
+					400: '#1a8cff',
+					500: '#0073e6',
+					600: '#005bb3',
+					700: '#004380',
+					800: '#002b4d',
+					900: '#00131a'
+				},
+				'vita-red': {
+					50: '#ffe6e6',
+					100: '#ffb3b3',
+					200: '#ff8080',
+					300: '#ff4d4d',
+					400: '#ff1a1a',
+					500: '#e60000',
+					600: '#b30000',
+					700: '#800000',
+					800: '#4d0000',
+					900: '#1a0000'
 				}
 			},
 			borderRadius: {

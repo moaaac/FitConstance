@@ -41,10 +41,10 @@ const Register = () => {
   }, [userData.peso, userData.altura]);
 
   const getIMCStatus = () => {
-    if (imc < 18.5) return { status: 'Abaixo do peso', color: 'text-blue-600' };
-    if (imc < 25) return { status: 'Peso normal', color: 'text-green-600' };
-    if (imc < 30) return { status: 'Sobrepeso', color: 'text-yellow-600' };
-    return { status: 'Obesidade', color: 'text-red-600' };
+    if (imc < 18.5) return { status: 'Abaixo do peso', color: 'text-vita-blue-600' };
+    if (imc < 25) return { status: 'Peso normal', color: 'text-vita-blue-600' };
+    if (imc < 30) return { status: 'Sobrepeso', color: 'text-vita-red-600' };
+    return { status: 'Obesidade', color: 'text-vita-red-600' };
   };
 
   const handleNext = () => {
@@ -65,11 +65,11 @@ const Register = () => {
   const progressValue = (step / 3) * 100;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-teal-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-vita-blue-50 to-vita-red-100 flex items-center justify-center p-4">
       <Card className="w-full max-w-2xl">
         <CardHeader className="text-center">
-          <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full flex items-center justify-center">
-            <Heart className="w-8 h-8 text-white" />
+          <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-r from-vita-blue-500 to-vita-red-600 rounded-full flex items-center justify-center">
+            <img src="/lovable-uploads/b639da62-bb05-4a29-b77c-9c6d6e2cc3b2.png" alt="VitaMulti" className="w-8 h-8 object-contain" />
           </div>
           <CardTitle className="text-2xl font-bold text-gray-800">Criar Conta - VitaMulti</CardTitle>
           <CardDescription>Passo {step} de 3</CardDescription>
@@ -179,7 +179,7 @@ const Register = () => {
                 <div className="mt-6 p-4 bg-white rounded-lg border">
                   <h4 className="font-semibold mb-2">Seu IMC</h4>
                   <div className="flex items-center gap-4">
-                    <div className="text-2xl font-bold text-emerald-600">{imc}</div>
+                    <div className="text-2xl font-bold text-vita-blue-600">{imc}</div>
                     <div className={`font-medium ${getIMCStatus().color}`}>
                       {getIMCStatus().status}
                     </div>
@@ -229,8 +229,8 @@ const Register = () => {
                 </div>
 
                 {imc > 0 && (
-                  <div className="mt-6 p-4 bg-emerald-50 rounded-lg border border-emerald-200">
-                    <h4 className="font-semibold mb-2 text-emerald-800">Resumo do seu perfil</h4>
+                  <div className="mt-6 p-4 bg-vita-blue-50 rounded-lg border border-vita-blue-200">
+                    <h4 className="font-semibold mb-2 text-vita-blue-800">Resumo do seu perfil</h4>
                     <div className="grid grid-cols-2 gap-2 text-sm">
                       <div>IMC: <span className="font-medium">{imc}</span></div>
                       <div>Status: <span className={`font-medium ${getIMCStatus().color}`}>{getIMCStatus().status}</span></div>
@@ -257,7 +257,7 @@ const Register = () => {
             {step < 3 ? (
               <Button 
                 onClick={handleNext}
-                className="bg-emerald-600 hover:bg-emerald-700 flex items-center gap-2"
+                className="bg-vita-blue-600 hover:bg-vita-blue-700 flex items-center gap-2"
               >
                 Próximo
                 <ArrowRight className="w-4 h-4" />
@@ -265,7 +265,7 @@ const Register = () => {
             ) : (
               <Button 
                 onClick={handleSubmit}
-                className="bg-emerald-600 hover:bg-emerald-700"
+                className="bg-vita-blue-600 hover:bg-vita-blue-700"
               >
                 Finalizar Cadastro
               </Button>

@@ -21,11 +21,11 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-teal-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-vita-blue-50 to-vita-red-100 flex items-center justify-center p-4">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
-          <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full flex items-center justify-center">
-            <Heart className="w-8 h-8 text-white" />
+          <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-r from-vita-blue-500 to-vita-red-600 rounded-full flex items-center justify-center">
+            <img src="/lovable-uploads/b639da62-bb05-4a29-b77c-9c6d6e2cc3b2.png" alt="VitaMulti" className="w-8 h-8 object-contain" />
           </div>
           <CardTitle className="text-2xl font-bold text-gray-800">VitaMulti</CardTitle>
           <CardDescription>Saúde e Bem-estar Multidisciplinar</CardDescription>
@@ -68,7 +68,7 @@ const Login = () => {
                 />
               </div>
               <Button 
-                className="w-full bg-emerald-600 hover:bg-emerald-700" 
+                className="w-full bg-vita-blue-600 hover:bg-vita-blue-700" 
                 onClick={() => handleLogin('usuário')}
               >
                 Entrar como Usuário
@@ -92,7 +92,7 @@ const Login = () => {
                 />
               </div>
               <Button 
-                className="w-full bg-blue-600 hover:bg-blue-700" 
+                className="w-full bg-vita-red-600 hover:bg-vita-red-700" 
                 onClick={() => handleLogin('aluno')}
               >
                 Entrar como Aluno
@@ -116,7 +116,7 @@ const Login = () => {
                 />
               </div>
               <Button 
-                className="w-full bg-purple-600 hover:bg-purple-700" 
+                className="w-full bg-vita-blue-700 hover:bg-vita-blue-800" 
                 onClick={() => handleLogin('professor')}
               >
                 Entrar como Professor
@@ -126,7 +126,7 @@ const Login = () => {
           
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-600 mb-2">Não tem uma conta?</p>
-            <Button variant="outline" className="w-full">
+            <Button variant="outline" className="w-full border-vita-blue-300 text-vita-blue-600 hover:bg-vita-blue-50">
               Criar Conta
             </Button>
           </div>
