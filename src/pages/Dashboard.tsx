@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
+import { Link } from 'react-router-dom';
 import { 
   Heart, 
   Dumbbell, 
@@ -40,10 +40,12 @@ const Dashboard = () => {
               <p className="text-blue-100">Bem-vindo ao seu painel de saúde</p>
             </div>
             <div className="flex items-center gap-4">
-              <Button variant="secondary" size="sm">
-                <User className="w-4 h-4 mr-2" />
-                Perfil
-              </Button>
+              <Link to="/profile">
+                <Button variant="secondary" size="sm">
+                  <User className="w-4 h-4 mr-2" />
+                  Perfil
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -137,9 +139,11 @@ const Dashboard = () => {
                   <h4 className="font-medium text-sm">Dicas Personalizadas</h4>
                   <p className="text-xs text-gray-600 mt-1">Para seu perfil intermediário</p>
                 </div>
-                <Button className="w-full bg-vita-red-600 hover:bg-vita-red-700" variant="outline">
-                  Ver Treinos
-                </Button>
+                <Link to="/educacao-fisica">
+                  <Button className="w-full bg-vita-red-600 hover:bg-vita-red-700">
+                    Ver Treinos
+                  </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>
@@ -165,11 +169,13 @@ const Dashboard = () => {
                 </div>
                 <div className="p-3 bg-gray-50 rounded-lg">
                   <h4 className="font-medium text-sm">Dicas Alimentares</h4>
-                  <p className="text-xs text-gray-600 mt-1">Baseado no seu IMC</p>
+                  <p className="text-xs text-vita-blue-600 mt-1">Baseado no seu IMC</p>
                 </div>
-                <Button className="w-full bg-vita-blue-600 hover:bg-vita-blue-700" variant="outline">
-                  Ver Nutrição
-                </Button>
+                <Link to="/nutricao">
+                  <Button className="w-full bg-vita-blue-600 hover:bg-vita-blue-700">
+                    Ver Nutrição
+                  </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>
@@ -197,9 +203,11 @@ const Dashboard = () => {
                   <h4 className="font-medium text-sm">Prevenção</h4>
                   <p className="text-xs text-gray-600 mt-1">Cuidados com lesões</p>
                 </div>
-                <Button className="w-full bg-vita-red-600 hover:bg-vita-red-700" variant="outline">
-                  Ver Cuidados
-                </Button>
+                <Link to="/fisioterapia">
+                  <Button className="w-full bg-vita-red-600 hover:bg-vita-red-700">
+                    Ver Cuidados
+                  </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>

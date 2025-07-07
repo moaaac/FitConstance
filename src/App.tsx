@@ -9,6 +9,9 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
+import EducacaoFisica from "./pages/EducacaoFisica";
+import Nutricao from "./pages/Nutricao";
+import Fisioterapia from "./pages/Fisioterapia";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +28,9 @@ const App = () => (
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/educacao-fisica" element={<EducacaoFisica />} />
+          <Route path="/nutricao" element={<Nutricao />} />
+          <Route path="/fisioterapia" element={<Fisioterapia />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
