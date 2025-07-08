@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -68,7 +67,7 @@ const Register = () => {
     <div className="min-h-screen bg-gradient-to-br from-vita-blue-50 to-vita-red-100 flex items-center justify-center p-4">
       <Card className="w-full max-w-2xl">
         <CardHeader className="text-center">
-          <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-r from-vita-blue-500 to-vita-red-600 rounded-full flex items-center justify-center">
+          <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-r from-vita-blue-500 to-vita-red-600 rounded-lg flex items-center justify-center">
             <img src="/lovable-uploads/b639da62-bb05-4a29-b77c-9c6d6e2cc3b2.png" alt="VitaMulti" className="w-8 h-8 object-contain" />
           </div>
           <CardTitle className="text-2xl font-bold text-gray-800">Criar Conta - VitaMulti</CardTitle>
