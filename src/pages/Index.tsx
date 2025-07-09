@@ -2,22 +2,10 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { 
-  Heart, 
-  Dumbbell, 
-  Apple, 
-  Activity,
-  Users,
-  ShieldCheck,
-  Star,
-  ArrowRight,
-  CheckCircle
-} from 'lucide-react';
+import { Heart, Dumbbell, Apple, Activity, Users, ShieldCheck, Star, ArrowRight, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-vita-blue-50 via-white to-vita-red-50">
+  return <div className="min-h-screen bg-gradient-to-br from-vita-blue-50 via-white to-vita-red-50">
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 py-20">
@@ -25,9 +13,7 @@ const Index = () => {
             <div className="mx-auto mb-8 w-20 h-20 bg-gradient-to-r from-vita-blue-500 to-vita-red-500 rounded-full flex items-center justify-center">
               <img src="/lovable-uploads/b639da62-bb05-4a29-b77c-9c6d6e2cc3b2.png" alt="FitConstace" className="w-12 h-12 object-contain" />
             </div>
-            <h1 className="text-5xl font-bold text-gray-800 mb-6">
-              FitConstace
-            </h1>
+            <h1 className="text-5xl font-bold text-gray-800 mb-6">FitConstance</h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
               Plataforma multidisciplinar de saúde e bem-estar. Conectamos professores, alunos em formação e usuários para promover conhecimento validado em educação física, nutrição e fisioterapia.
             </p>
@@ -219,8 +205,6 @@ const Index = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
