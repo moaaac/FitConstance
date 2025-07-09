@@ -25,9 +25,9 @@ const Login = () => {
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-r from-vita-blue-500 to-vita-red-600 rounded-full flex items-center justify-center">
-            <img src="/lovable-uploads/b639da62-bb05-4a29-b77c-9c6d6e2cc3b2.png" alt="VitaMulti" className="w-8 h-8 object-contain" />
+            <img src="/lovable-uploads/b639da62-bb05-4a29-b77c-9c6d6e2cc3b2.png" alt="FitConstance" className="w-8 h-8 object-contain" />
           </div>
-          <CardTitle className="text-2xl font-bold text-gray-800">VitaMulti</CardTitle>
+          <CardTitle className="text-2xl font-bold text-gray-800">FitConstance</CardTitle>
           <CardDescription>Saúde e Bem-estar Multidisciplinar</CardDescription>
         </CardHeader>
         <CardContent>

@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -57,7 +58,7 @@ const Register = () => {
   const handleSubmit = () => {
     toast({
       title: "Cadastro realizado com sucesso!",
-      description: "Bem-vindo ao VitaMulti!",
+      description: "Bem-vindo ao FitConstance!",
     });
   };
 
@@ -68,9 +69,9 @@ const Register = () => {
       <Card className="w-full max-w-2xl">
         <CardHeader className="text-center">
           <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-r from-vita-blue-500 to-vita-red-600 rounded-lg flex items-center justify-center">
-            <img src="/lovable-uploads/b639da62-bb05-4a29-b77c-9c6d6e2cc3b2.png" alt="VitaMulti" className="w-8 h-8 object-contain" />
+            <img src="/lovable-uploads/b639da62-bb05-4a29-b77c-9c6d6e2cc3b2.png" alt="FitConstance" className="w-8 h-8 object-contain" />
           </div>
-          <CardTitle className="text-2xl font-bold text-gray-800">Criar Conta - VitaMulti</CardTitle>
+          <CardTitle className="text-2xl font-bold text-gray-800">Criar Conta - FitConstance</CardTitle>
           <CardDescription>Passo {step} de 3</CardDescription>
           <Progress value={progressValue} className="w-full mt-2" />
         </CardHeader>
